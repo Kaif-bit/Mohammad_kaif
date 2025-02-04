@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title></title>
+	 <style>
+
+	*{
+		padding: 0;
+		margin:0;
+		box-sizing: border-box;
+		font-family: 'Poppins';
+	}
+
+	.container {
+		width: 1576;
+		height: 100vh;
+		background-color: rgb(22,21,43,0.0);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.content {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.content h1{
+		font-size: 105px;
+		color: #fff;
+		margin-top: 30px;
+	}
+	.content h1{
+		font-size: 65px;
+		color: #fff;
+		text-decoration: none;
+		border:2px solid #fff;
+		padding: 15px 25px;
+		border-radius: 50px;
+		transition: 0.3s;
+		background-color: ;
+	}
+		.booknow {
+			margin:50px auto;
+			width: 180px;
+			height: 50px;
+			font-size: 25px;
+			line-height: 50px;
+			background-color: skyblue;
+			color: #fff;
+			text-align: center;
+			transition: .3s ease
+		}
+		.booknow:hover {
+			transform:scale(0.6); 
+			-webkit-transform: scale(0.6);
+			-ms-transform: scale(0.6);
+		}
+
+	.background-clip{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -2;
+	}
+	@media(min-aspect-ratio:16/9) {
+		.background-clip{
+			width: 100%;
+			height: auto;
+		}
+		.content p{
+			font-size: 25px;
+			color: white;
+			text-align: center;
+		}
+		.facebook{
+			margin:50px auto;
+			font-size: 40px;
+			color: skyblue;
+			transition: .2s ease;
+		}
+		.facebook:hover{
+			rotate:360deg;
+		}
+		.google{
+			margin:50px auto;
+			font-size: 40px;
+			color: skyblue;
+			transition: .2s ease;
+		}
+		.google:hover{
+			rotate:360deg;
+		}
+		.facebook{
+			margin:50px auto;
+			font-size: 40px;
+			color: skyblue;
+			transition: 2s ease;
+		}
+		.facebook:hover{
+			rotate:360deg;
+		}
+		.facebook{
+			margin:50px auto;
+			font-size: 40px;
+			color: skyblue;
+			transition: .2s ease;
+		}
+		.facebook:hover{
+			rotate:360deg;
+		}
+		.fa-instagram{
+			color: #e84393;
+		}
+		.fa-youtube{
+			color: #e84118;
+		}
+		.fa-twitter{
+			color: #0097e6;
+		}
+		.fa-linkedin{
+			color: #0096e6;
+		}
+		#part:hover{
+			text-shadow: : rgba(12,20,0,.5);
+		}
+	</style>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="ous">
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="ous">
+
+   
+</head>
+<body>	
+		
+		<div class="w3-bar w3-black w3-all w3-xlarge w3-hoverable w3-center" 
+		style="position: fixed;">
+ 		    <a href="#home" class="w3-bar-item w3-button" 
+ 		    style="text-decoration: none;margin-left: 450px;">
+ 				HOME
+ 			</a>
+  			<a href="#about" class="w3-bar-item w3-button" 
+  			style="text-decoration: none;">
+  				ABOUT US
+  			</a>
+  			<a href="#rooms" class="w3-bar-item w3-button" 
+  			style="text-decoration: none;">
+  				ROOMS
+  			</a>
+ 		 	<a href="#price" class="w3-bar-item w3-button" 
+ 		 	style="text-decoration: none;">
+ 		 		PRICE
+ 		 	</a>
+  			<a href="#gallery" class="w3-bar-item w3-button" 
+  			style="text-decoration: none;">
+  				GALLERY
+  			</a>
+  			<a href="Contact Us.html">
+  				<button type="button" class="btn btn-secondary">
+  					BOOK NOW
+  				</button>
+  			</a>
+		</div>
+
+						<strong>
+							<a href="Contact Us.html" style="text-decoration: none;
+							color: grey">
+								BOOK NOW
+							</a>
+						</strong>
+					</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<a name="home">
+			<div class="container">
+			<video autoplay loop muted plays-inline class="background-clip">
+				<source src="img/mp4.mp4" type="video/mp4">
+			</video>
+			<div class="content">
+				<h1>
+						WELCOME TO HOTEL IN DUBAI
+				</h1>
+				<p>
+		  			This is our best hotel in our city  
+		  			used only for buisness<br>&nbsp &nbsp
+		    		party,s and meeting thanks you very much<br>
+		    		&nbsp &nbsp &nbsp
+		    		please book our hotel very fast
+				</p>
+				<a href="Contact Us.html" style="text-decoration: none;">
+				<div class="booknow">
+					BOOK NOW
+				</div>
+			</a>
+				<br>
+			</div>
+			</div>
+		</a>
+		
+	<br><br><br>
+	<br><br>
+		<h2 style="font-size:40px ;color: black;margin-left: 700px; ">
+			<a name="about">ABOUT US</a>
+		</h2>
+		<br><br>
+		<table>
+			<tr>
+				<td width="100px"></td>
+				<td width="500px">
+					<h1 style="font-size:50px;color: black;">
+						Welocome to <font color="orange">hotel</font><br>
+						<font color="orange">	the haven</font> of your weekend
+					</h1><br>
+					<p style="color: black;font-size: 20px;">
+						Hotels are classified by the classification committee, which comprises Government and trade representatives. Based on different facilities and services provided by a hotel; they are given star ratings from one to five. Hotels are categorized depending upon location, number of rooms, types of rooms and other available facilities. One of the important facilities in hotels includes good reception and information counter. Today, modern western hotels are found in all big cities and at important tourist locations.
+					</p>
+				</td>
+				<td width="100px"></td>
+				<td width="300px">
+					<img src="img/4.jpg" height="450px" width="390px;" 
+					style="margin-top: 30px;">
+				</td>
+				<td width="300px">
+					<img src="img/5.jpg" height="300px" width="300px;" 
+					style="margin-left:50px;margin-top: 100px;">
+				</td>
+			</tr>
+		</table>
+<br><br><br>
+<br>		
+		<p style="font-size: 20px;color: black;margin-left: 680px;">
+				<a name="rooms"> What i can do for you.</a>
+			</p>
+			<strong style="font-size:30px; color: black;margin-left: 650px;">
+				Our favorite Rooms
+			</strong><br><br><br><br>
+
+			<table>
+				<tr>
+					<td width="400px">
+						<img src="img/6.jpg" height="550px" width="500px"class="w3-hover-grayscale">
+					</td>
+					<td width="20px;"></td>
+					<td width="400px;">
+						<img src="img/7.jpg" height="550px" width="500px"class="w3-hover-grayscale">
+					</td>
+					<td width="20px;"></td>
+					<td width="400px">
+						<img src="img/8.jpg" height="550px" width="550px"class="w3-hover-grayscale">
+					</td>>
+				</tr>
+			</table>
+			<br><br><br>
+			<p style="font-size: 20px;color: black;margin-left: 700px;">
+				 What i can do for you.
+			</p>
+			<br>
+			<center>
+				<strong style="color: black;font-size: 35px;">
+				<a name="price">OUR PRICE</a>
+				</strong>
+			</center>
+		<br><br><br>
+		<table>
+		<tr>
+			<td width="200px">
+				<div style="border:1px solid black;height:450px; ;width:350px ;
+				background-color: ">
+					<strong style="font-size:30px ;color: black;margin-left:80px;
+					text-decoration: underline; ">
+						Economic
+					</strong>
+					<br><br>
+					<p style="font-size:15px ;color: black;margin-left: 80px;
+					font-family:bold; ">
+						Flight Ticket(2)<br><br>Music Concert(30% Off)<br><br>
+						Restaurant(Snacks)<br><br>Face Make(No)
+					</p>
+					<br><br>
+					<strong style="font-size: 35px;color: black;margin-left: 80px;">
+						$150/<font size="4px">night</font>
+					</strong>
+					<br><br><br>
+					<button type="btn" class="button btn-primary" style="height:40px; width:150px;margin-left:70px; ">
+						<a href="Contact Us.html" style="color: white;
+						text-decoration: none;">
+							SIGN UP
+						</a>
+					</button>
+				</div>
+			</td>
+			<td width="100px"></td>
+			<td width="200px">
+				<div style="border:1px solid black;height:450px; ;width:350px ;
+				background-color: ">
+					<strong style="font-size:30px ;color: black;margin-left:80px;
+					text-decoration: underline; ">
+						Economic
+					</strong>
+					<br><br>
+					<p style="font-size:15px ;color: black;margin-left: 80px;
+					font-family:bold; ">
+						Flight Ticket(2)<br><br>Music Concert(30% Off)<br><br>
+						Restaurant(Snacks)<br><br>Face Make(No)
+					</p>
+					<br><br>
+					<strong style="font-size: 35px;color: black;margin-left: 80px;">
+						$150/<font size="4px">night</font>
+					</strong>
+					<br><br><br>
+					<button type="btn" class="button btn-primary" style="height:40px; width:150px;margin-left:70px; ">
+						<a href="Contact Us.html" style="color: white; text-decoration: none;">
+							SIGN UP
+						</a>
+					</button>
+				</div>
+			</td>
+			<td width="100px"></div>
+			<td width="200px">
+				<div style="border:1px solid black;height:450px; ;width:350px ;
+				background-color: ">
+					<strong style="font-size:30px ;color: black;margin-left:80px;
+					text-decoration: underline; ">
+						Economic
+					</strong>
+					<br><br>
+					<p style="font-size:15px ;color: black;margin-left: 80px;
+					font-family:bold; ">
+						Flight Ticket(2)<br><br>Music Concert(30% Off)<br><br>
+						Restaurant(Snacks)<br><br>Face Make(No)
+					</p>
+					<br><br>
+					<strong style="font-size: 35px;color: black;margin-left: 80px;">
+						$150/<font size="4px">night</font>
+					</strong>
+					<br><br><br>
+					<button type="btn" class="button btn-primary" style="height:40px; width:150px;margin-left:70px; ">
+						<a href="Contact Us.html" style="color: white;
+						text-decoration: none;">
+							SIGN UP
+						</a>
+					</button>
+				</div>
+			</td>
+			<td width="100px"></td>
+			<td width="200px" class="w3-hover-grayscale">
+				<div style="border:1px solid black;height:450px; ;width:350px ;
+				background-color: ;">
+					<strong style="font-size:30px ;color: black;margin-left:80px;
+					text-decoration: underline; ">
+						Economic
+					</strong>
+					<br><br>
+					<p style="font-size:15px ;color: black;margin-left: 80px; ">
+						Flight Ticket(2)<br><br>Music Concert(30% Off)<br><br>
+						Restaurant(Snacks)<br><br>Face Make(No)
+					</p>
+					<br><br>
+					<strong style="font-size: 35px;color: black;margin-left: 80px;">
+						$150/<font size="4px">night</font>
+					</strong>
+					<br><br><br>
+					<button type="btn" class="button btn-primary" style="height:40px; width:150px;margin-left:70px; ">
+						 <a href="Contact Us.html" style="color: white; 
+						 	text-decoration: none;">
+						 		SIGN UP
+						 </a>
+					</button>
+				</div>
+			</td>
+	</tr>
+</table>
+
+		<br><br><br>
+			<p style="font-size: 20px;color: black;margin-left: 700px;">
+				 What i can do for you.
+			</p>
+<br>			
+			<center>
+				<strong style="font-size: 35PX;color: ">
+					<a name="gallery">OUR GALLERY</a>
+				</strong>
+			</center>
+<br><br>
+			<table>
+				<tr>
+					<td width="150px"></div>
+						<td width="500px">
+							<img src="img/9.jpg" height="300px;" width="300px;">
+							<img src="img/10.jpg" height="300px;" width="295px;">
+							<br>
+							<img src="img/11.jpg" height="350px;" width="600px;">
+						</td>
+						<td width="100px"></td>
+						<td width="500px">
+							<img src="img/12.jpg" height="300px;" width="300px;">
+							<img src="img/13.jpg" height="300px;" width="295px;">
+							<br>
+							<img src="img/14.jpg" height="350px;" width="600px;">
+						</td>
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<br><br><br>
+			<div style="border:1px solid black;height: 550px;width: 1576px;
+			background-color: black;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-3">
+							<h1 style="font-size:33px; color: white;">
+								Hotel Location
+							</h1><br><br>
+								<p style="font-size: 16px;color: white;">
+									Towering high at 302 metres across 63 levels,<br><br> Address Downtown is a veritable landmark of<br><br>
+									luxury, situated in the very centre of<br><br>
+								 	Downtown Dubai.
+								</p>
+								<br><br>
+								<i class="far fa-comment-dots" 
+								style="font-size:25px;
+								color:skyblue;">
+								</i>
+								<strong style="font-size: 18px;margin-left:30px;
+								margin-bottom: 42px;color: white; ">Kaifali@gmail.com
+								</strong>
+								<br><br>
+								<i class="fas fa-hotel" 
+								style="font-size:25px;
+								color:skyblue;">
+								</i>
+								<strong style="font-size: 18px;margin-left:30px;
+								margin-bottom: 42px;color: white; ">Dubai Hotel
+								</strong>
+								<br><br>
+								<i class="fas fa-phone" 
+								style="font-size:25px;
+								color:skyblue;">
+								</i>
+								<strong style="font-size: 18px;margin-left:30px;
+								margin-bottom: 42px;color: white; ">-8699037048
+								</strong>
+						</div>
+						<div class="col-sm-1"></div>
+						<div class="col-sm-2">
+							<h1 style="font-size:33px ;color: white;">
+								More Links
+							</h1>
+							<br><br>
+							<p style="font-size:16px; ;color: white;">
+								<a href="#home" style="color: white">> HOME</a><br><br>
+								<a href="#about" style="color: white">> ABOUT US</a><br><br>
+								<a href="#rooms" style="color: white">> ROOMS</a><br><br>
+								<a href="#price" style="color: white">> PRICE</a><br><br>
+								<a href="#gallery" style="color: white">> GALLERY</a><br><br>
+							</p>
+						</div>
+						<div class="col-sm-2">
+							<h1 style="font-size:33px ;color: white;">
+								Demo Links
+							</h1>
+							<br><br>
+							<p style="font-size:16px; ;color: white;">
+								<a href="#home" style="color: white">> HOME</a><br><br>
+								<a href="#about" style="color: white">> ABOUT US</a><br><br>
+								<a href="#rooms" style="color: white">> ROOMS</a><br><br>
+								<a href="#price" style="color: white">> PRICE</a><br><br>
+								<a href="#gallery" style="color: white">> GALLERY</a><br><br>
+							</p>
+						</div>
+						<div class="col-sm-3">
+							<h1 style="font-size:33px ;color: white;">
+								Newsletter
+							</h1>
+							<br><br>
+    						<input type="email" class="form-control" id="email" placeholder="Enter Your Email Here" name="email" width="50px">
+    						<br><br>
+    						<button type="btn" class="button" style="height:40px; width:200px;margin-left:0px; ">
+								Subscribe
+							</button>
+    						<br><br><br>
+    						<h1 style="font-size: 23px;color: white;">
+    							STAY CONNECTED
+    						</h1>
+    						<br><br>
+    						<a href="   https://www.facebook.com/nawabashraf255@gmail.com">	
+    							<i class='fab fa-facebook ' style='font-size:38px;
+    							color: blue'></i>
+    						</a>
+    						<i class='fab fa-twitter' style='font-size:38px;
+    						margin-left:20px; '></i>
+    						<a href="   https://www.instagram.com/kaifpbx1">
+    							<i class='fab fa-instagram' style='font-size:38px;
+ 								margin-left:20px; '></i>
+ 							</a>
+ 							<a href="   https://www.youtube.com/ShaheenMalik">
+    							<i class='fab fa-youtube' style='font-size:38px;
+    							margin-left:20px; '></i>
+    						</a>
+    							<i class='fab fa-linkedin' style='font-size:38px;
+    						margin-left:20px; '></i>
+    					</div>
+					</div>
+				</div><br><br>
+				<div class="progress">
+   				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">
+   				</div>
+ 				</div>
+			</div>			
+</body>
+</html>
